@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+header{
+    text-align: center;
+
+}
+
+.Header{
+    font-size: 45px;
+    color : rgb(54, 54, 248);
+    font-family: sans-serif;
+}   
+
+main{
+    background-color: rgb(216, 216, 216);
+    text-align: center;
+    margin-top: 50px;
+    margin-right: 60px;
+    margin-left: 60px;
+    padding: 48px;
+    box-shadow:  1px 1px 100px rgb(233, 231, 231);
+}
