@@ -1,0 +1,19 @@
+{
+  "files.associations": {
+    "*.html": "html"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.formatOnSave": true,
+  "workbench.editorAssociations": [
+    {
+      "viewType": "default",
+      "filenamePattern": "*.html"
+    },
+    {
+      "viewType": "default",
+      "filenamePattern": "*.css"
+    }
+  ]
+}
