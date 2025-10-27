@@ -172,7 +172,7 @@ function handleOrderSubmit(e) {
         specialInstructions: "No onions please",
         deliveryMethod: "delivery" // or "pickup"
     },
-    orderDate: "2024-10-27T12:30:00Z",
+    orderDate: "2025-10-27T12:30:00Z",
     subtotal: 22.97,
     tax: 2.297,
     deliveryFee: 5.00,
@@ -544,6 +544,7 @@ macOS: Cmd+Option+I or Cmd+Shift+C
 
 ---
 
-**Last Updated**: October 27, 2024  
+**Last Updated**: October 27, 2025  
+**Copyright**: Keying SD25 - Fall Midterm sprint copyright 2025  
 **Status**: Ready for Reference  
 **Version**: 1.0

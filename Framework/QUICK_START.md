@@ -298,5 +298,6 @@ No build tools required - just upload files as-is!
 ---
 
 **Status**: Ready to Use ✅  
-**Last Updated**: October 27, 2024  
+**Last Updated**: October 27, 2025  
+**Copyright**: Keying SD25 - Fall Midterm sprint copyright 2025  
 **Questions?** Check README.md or PROJECT_GUIDELINES.md for detailed documentation

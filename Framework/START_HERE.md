@@ -546,7 +546,8 @@ Your Sunny Bites Café website is:
 
 **Status**: ✅ **COMPLETE & READY**
 
-**Date**: October 27, 2024  
+**Date**: October 27, 2025  
+**Copyright**: Keying SD25 - Fall Midterm sprint copyright 2025  
 **Version**: 1.0.0  
 **Ready For**: Submission, GitHub, Production
 

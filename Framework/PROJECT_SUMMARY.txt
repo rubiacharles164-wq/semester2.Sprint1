@@ -698,7 +698,8 @@ Testing:
 
 ═══════════════════════════════════════════════════════════════════════════════
 
-Date Created: October 27, 2024
+Date Created: October 27, 2025
+Copyright: Keying SD25 - Fall Midterm sprint copyright 2025
 Status: ✅ COMPLETE
 Version: 1.0
 Ready for: Production Deployment

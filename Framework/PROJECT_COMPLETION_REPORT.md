@@ -1,6 +1,7 @@
-# 🌞 Sunny Bites Café - Project Completion Report
+# � **Sunny Bites Café - Project Completion Report**
 
-**Date**: October 27, 2024  
+**Date**: October 27, 2025  
+**Copyright**: Keying SD25 - Fall Midterm sprint copyright 2025  
 **Status**: ✅ **COMPLETE AND READY FOR SUBMISSION**  
 **Version**: 1.0.0
 
@@ -572,9 +573,10 @@ For any questions or clarification:
 ---
 
 **Created By**: Development Team  
-**Date**: October 27, 2024  
+**Date**: October 27, 2025  
 **Version**: 1.0.0  
-**Status**: ✅ Production Ready
+**Status**: ✅ Production Ready  
+**Copyright**: Keying SD25 - Fall Midterm sprint copyright 2025
 
 ---
 

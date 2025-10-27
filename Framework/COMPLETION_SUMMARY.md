@@ -427,7 +427,8 @@ Your Sunny Bites Café website is:
 
 A professional, complete website framework ready for real-world use.
 
-**Date Created**: October 27, 2024  
+**Date Created**: October 27, 2025  
+**Copyright**: Keying SD25 - Fall Midterm sprint copyright 2025  
 **Status**: ✅ Complete and Production Ready  
 **Version**: 1.0.0
 

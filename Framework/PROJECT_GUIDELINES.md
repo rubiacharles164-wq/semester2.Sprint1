@@ -143,7 +143,7 @@ orderHistory = [
         items: [...],
         customer: {...},
         total: 45.99,
-        orderDate: "2024-10-27T..."
+        orderDate: "2025-10-27T..."
     }
 ]
 ```
@@ -257,4 +257,5 @@ All code is well-commented and organized for easy maintenance.
 
 **Status**: ✅ COMPLETE  
 **Ready for**: Production Deployment, GitHub Upload, Grading  
-**Date**: October 27, 2024
+**Date**: October 27, 2025  
+**Copyright**: Keying SD25 - Fall Midterm sprint copyright 2025

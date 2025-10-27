@@ -245,6 +245,7 @@ For questions or issues, refer to the individual JavaScript files which contain 
 
 ---
 
-**Created**: 2024  
-**Last Updated**: October 27, 2024  
+**Created**: 2025  
+**Last Updated**: October 27, 2025  
+**Copyright**: Keying SD25 - Fall Midterm sprint copyright 2025  
 **Status**: Complete and Production Ready

@@ -205,5 +205,6 @@ const PROVINCIAL_TAX_RATES = {
 
 ---
 
-**Completion Date:** 2024
+**Completion Date:** 2025  
+**Copyright**: Keying SD25 - Fall Midterm sprint copyright 2025  
 **Status:** ✅ Complete and Production Ready
