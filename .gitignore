@@ -1,0 +1,12 @@
+# macOS
+.DS_Store
+
+# VSCode
+.vscode/
+
+# Node dependencies
+node_modules/
+
+# Miscellaneous
+*.log
+*.mjs

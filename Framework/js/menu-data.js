@@ -3,7 +3,6 @@
    ========================================== */
 
 const menuItems = [
-  // Breakfast Items
   {
     id: 1,
     name: "Acai Power Bowl",
@@ -12,7 +11,8 @@ const menuItems = [
       "Organic acai base with granola, berries, coconut, and honey drizzle",
     price: 12.99,
     image:
-      "https://images.unsplash.com/photo-1590080876949-5c6d8d5d49b2?w=300&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1672303185512-399a42b2cf4a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MjI0OTJ8MHwxfHNlYXJjaHwxfHxBY2FpJTIwUG93ZXIlMjBCb3dsfGVufDB8fHx8MTc2MTYyMzA0N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+    crop: null,
   },
   {
     id: 2,
@@ -22,7 +22,8 @@ const menuItems = [
       "Whole grain toast with smashed organic avocado, cherry tomatoes, and herbs",
     price: 10.99,
     image:
-      "https://images.unsplash.com/photo-1548521881-bedc539b2b85?w=300&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1687276287139-88f7333c8ca4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MjI0OTJ8MHwxfHNlYXJjaHwxfHxBdm9jYWRvJTIwVG9hc3R8ZW58MHx8fHwxNzYxNjIzMDQ4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+    crop: null,
   },
   {
     id: 3,
@@ -31,7 +32,8 @@ const menuItems = [
     description: "Spinach, kale, banana, coconut milk with fresh toppings",
     price: 11.99,
     image:
-      "https://images.unsplash.com/photo-1590080876949-5c6d8d5d49b2?w=300&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1600728256404-aaa448921ad9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MjI0OTJ8MHwxfHNlYXJjaHwxfHxHcmVlbiUyMFNtb290aGllJTIwQm93bHxlbnwwfHx8fDE3NjE2MjMwNDh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    crop: null,
   },
   {
     id: 4,
@@ -40,7 +42,8 @@ const menuItems = [
     description: "Free-range eggs with fresh vegetables, whole wheat toast",
     price: 9.99,
     image:
-      "https://images.unsplash.com/photo-1612874742237-6526221fcf4f?w=300&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1579249869574-5839f4ac516d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MjI0OTJ8MHwxfHNlYXJjaHwxfHxPcmdhbmljJTIwRWdnJTIwU2NyYW1ibGV8ZW58MHx8fHwxNzYxNjIzMDQ5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+    crop: null,
   },
   {
     id: 5,
@@ -49,7 +52,8 @@ const menuItems = [
     description: "Organic Greek yogurt, fresh berries, granola, and honey",
     price: 8.99,
     image:
-      "https://images.unsplash.com/photo-1488477181946-6428a0291840?w=300&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1571230389215-b34a89739ef1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MjI0OTJ8MHwxfHNlYXJjaHwxfHxHcmVlayUyMFlvZ3VydCUyMFBhcmZhaXR8ZW58MHx8fHwxNzYxNjIzMDUwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+    crop: null,
   },
   {
     id: 6,
@@ -59,10 +63,9 @@ const menuItems = [
       "Protein-packed quinoa with almond butter, banana, and cinnamon",
     price: 10.99,
     image:
-      "https://images.unsplash.com/photo-1625949204848-f21d37d3c689?w=300&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1665674053062-4ff91c7204e6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MjI0OTJ8MHwxfHNlYXJjaHwxfHxRdWlub2ElMjBCcmVha2Zhc3QlMjBCb3dsfGVufDB8fHx8MTc2MTYyMzA1MHww&ixlib=rb-4.1.0&q=80&w=1080",
+    crop: null,
   },
-
-  // Lunch Items
   {
     id: 7,
     name: "Grilled Chicken Salad",
@@ -71,7 +74,8 @@ const menuItems = [
       "Organic greens, grilled chicken breast, seasonal vegetables, vinaigrette",
     price: 13.99,
     image:
-      "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=300&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1604909052743-94e838986d24?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MjI0OTJ8MHwxfHNlYXJjaHwxfHxHcmlsbGVkJTIwQ2hpY2tlbiUyMFNhbGFkfGVufDB8fHx8MTc2MTYyMzA1MXww&ixlib=rb-4.1.0&q=80&w=1080",
+    crop: null,
   },
   {
     id: 8,
@@ -81,7 +85,8 @@ const menuItems = [
       "Whole wheat wrap with hummus, feta, tomatoes, cucumbers, olives",
     price: 11.99,
     image:
-      "https://images.unsplash.com/photo-1609501676725-7186f017a4b1?w=300&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1560325724-42efbe42d4ca?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MjI0OTJ8MHwxfHNlYXJjaHwxfHxNZWRpdGVycmFuZWFuJTIwV3JhcHxlbnwwfHx8fDE3NjE2MjMwNTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    crop: null,
   },
   {
     id: 9,
@@ -90,7 +95,8 @@ const menuItems = [
     description: "Quinoa, roasted vegetables, chickpeas, tahini dressing",
     price: 12.99,
     image:
-      "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=300&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1579016759615-dcfd5813b6ea?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MjI0OTJ8MHwxfHNlYXJjaHwxfHxCdWRkaGElMjBQb3dlciUyMEJvd2x8ZW58MHx8fHwxNzYxNjIzMDUzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+    crop: null,
   },
   {
     id: 10,
@@ -99,7 +105,8 @@ const menuItems = [
     description: "Artisan bread with fresh vegetables, sprouts, and pesto mayo",
     price: 10.99,
     image:
-      "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=300&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1720026664794-9f2909cda2fa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MjI0OTJ8MHwxfHNlYXJjaHwxfHxPcmdhbmljJTIwVmVnZ2llJTIwU2FuZHdpY2h8ZW58MHx8fHwxNzYxNjIzMDUzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+    crop: null,
   },
   {
     id: 11,
@@ -108,7 +115,8 @@ const menuItems = [
     description: "Wild-caught salmon with roasted vegetables and quinoa",
     price: 15.99,
     image:
-      "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=300&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1704007573697-6a516da421ec?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MjI0OTJ8MHwxfHNlYXJjaHwxfHxHcmlsbGVkJTIwU2FsbW9uJTIwUGxhdGV8ZW58MHx8fHwxNzYxNjIzMDU0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+    crop: null,
   },
   {
     id: 12,
@@ -117,10 +125,9 @@ const menuItems = [
     description: "Organic falafel, hummus, tabbouleh, pita bread",
     price: 11.99,
     image:
-      "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=300&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1734772591537-15ac1b3b3c04?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MjI0OTJ8MHwxfHNlYXJjaHwxfHxGYWxhZmVsJTIwQ29tYm98ZW58MHx8fHwxNzYxNjIzMDU0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+    crop: null,
   },
-
-  // Beverages
   {
     id: 13,
     name: "Green Detox Smoothie",
@@ -128,7 +135,8 @@ const menuItems = [
     description: "Spinach, ginger, apple, celery, lemon juice",
     price: 7.99,
     image:
-      "https://images.unsplash.com/photo-1553530666-ba2a7fc5c6dc?w=300&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1613637028036-ca0b31a4ad12?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MjI0OTJ8MHwxfHNlYXJjaHwxfHxHcmVlbiUyMERldG94JTIwU21vb3RoaWV8ZW58MHx8fHwxNzYxNjIzMDU1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+    crop: null,
   },
   {
     id: 14,
@@ -137,7 +145,8 @@ const menuItems = [
     description: "Fresh mango, pineapple, coconut milk, banana",
     price: 7.99,
     image:
-      "https://images.unsplash.com/photo-1572192619409-2e43fcc50e84?w=300&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1552070406-cd6666523132?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MjI0OTJ8MHwxfHNlYXJjaHwxfHxUcm9waWNhbCUyME1hbmdvJTIwU21vb3RoaWV8ZW58MHx8fHwxNzYxNjIzMDU2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+    crop: null,
   },
   {
     id: 15,
@@ -146,7 +155,8 @@ const menuItems = [
     description: "Mixed berries, Greek yogurt, honey, almond milk",
     price: 8.99,
     image:
-      "https://images.unsplash.com/photo-1590553080323-9d69f3c87c11?w=300&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1707256825526-d03615da12aa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MjI0OTJ8MHwxfHNlYXJjaHwxfHxCZXJyeSUyMEJsYXN0JTIwU21vb3RoaWV8ZW58MHx8fHwxNzYxNjIzMDU2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+    crop: null,
   },
   {
     id: 16,
@@ -155,7 +165,8 @@ const menuItems = [
     description: "Smooth, organic cold brew coffee with choice of milk",
     price: 4.99,
     image:
-      "https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=300&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1733324770546-edb9dd4fe556?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MjI0OTJ8MHwxfHNlYXJjaHwxfHxPcmdhbmljJTIwQ29sZCUyMEJyZXd8ZW58MHx8fHwxNzYxNjIzMDU3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+    crop: null,
   },
   {
     id: 17,
@@ -164,7 +175,8 @@ const menuItems = [
     description: "Organic matcha green tea powder with steamed milk",
     price: 5.99,
     image:
-      "https://images.unsplash.com/photo-1571115174575-2c8bb2b274c3?w=300&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1582785513054-8d1bf9d69c1a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MjI0OTJ8MHwxfHNlYXJjaHwxfHxNYXRjaGElMjBMYXR0ZXxlbnwwfHx8fDE3NjE2MjMwNTd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    crop: null,
   },
   {
     id: 18,
@@ -173,10 +185,9 @@ const menuItems = [
     description: "Homemade lemonade with fresh lemons and organic agave",
     price: 4.99,
     image:
-      "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=300&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1665582295782-eecc2e25b74f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MjI0OTJ8MHwxfHNlYXJjaHwxfHxGcmVzaCUyMExlbW9uYWRlfGVufDB8fHx8MTc2MTYyMzA1OHww&ixlib=rb-4.1.0&q=80&w=1080",
+    crop: null,
   },
-
-  // Desserts
   {
     id: 19,
     name: "Raw Chocolate Cake",
@@ -184,7 +195,8 @@ const menuItems = [
     description: "Organic raw chocolate cake with cashew frosting",
     price: 7.99,
     image:
-      "https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=300&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1642423927418-fdac74328f85?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MjI0OTJ8MHwxfHNlYXJjaHwxfHxSYXclMjBDaG9jb2xhdGUlMjBDYWtlfGVufDB8fHx8MTc2MTYyMzA1OXww&ixlib=rb-4.1.0&q=80&w=1080",
+    crop: null,
   },
   {
     id: 20,
@@ -193,7 +205,8 @@ const menuItems = [
     description: "Moist, plant-based banana bread with walnuts",
     price: 5.99,
     image:
-      "https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=300&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1676976198391-2c1d84dfe1cc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MjI0OTJ8MHwxfHNlYXJjaHwxfHxWZWdhbiUyMEJhbmFuYSUyMEJyZWFkfGVufDB8fHx8MTc2MTYyMzA1OXww&ixlib=rb-4.1.0&q=80&w=1080",
+    crop: null,
   },
   {
     id: 21,
@@ -202,7 +215,8 @@ const menuItems = [
     description: "Gluten-free almond butter cookies with dark chocolate chips",
     price: 4.99,
     image:
-      "https://images.unsplash.com/photo-1585080972057-c7fb3f8c4c1f?w=300&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1608455362846-c08608c2d5ed?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MjI0OTJ8MHwxfHNlYXJjaHwxfHxBbG1vbmQlMjBCdXR0ZXIlMjBDb29raWVzfGVufDB8fHx8MTc2MTYyMzA1OXww&ixlib=rb-4.1.0&q=80&w=1080",
+    crop: null,
   },
   {
     id: 22,
@@ -211,7 +225,8 @@ const menuItems = [
     description: "No-bake cheesecake with organic berries and dates",
     price: 6.99,
     image:
-      "https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=300&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1695088957420-c3b97d1f1138?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MjI0OTJ8MHwxfHNlYXJjaHwxfHxPcmdhbmljJTIwQmVycnklMjBDaGVlc2VjYWtlfGVufDB8fHx8MTc2MTYyMzA2MHww&ixlib=rb-4.1.0&q=80&w=1080",
+    crop: null,
   },
   {
     id: 23,
@@ -220,7 +235,8 @@ const menuItems = [
     description: "Organic chia seeds, coconut milk, topped with berries",
     price: 6.99,
     image:
-      "https://images.unsplash.com/photo-1488477181946-6428a0291840?w=300&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1490474504059-bf2db5ab2348?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MjI0OTJ8MHwxfHNlYXJjaHwxfHxDaGlhJTIwU2VlZCUyMFB1ZGRpbmd8ZW58MHx8fHwxNzYxNjIzMDYxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+    crop: null,
   },
   {
     id: 24,
@@ -229,7 +245,8 @@ const menuItems = [
     description: "No-bake coconut, dates, and dark chocolate bites",
     price: 5.99,
     image:
-      "https://images.unsplash.com/photo-1585080972057-c7fb3f8c4c1f?w=300&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1734773487516-078839ea277f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MjI0OTJ8MHwxfHNlYXJjaHwxfHxDb2NvbnV0JTIwRW5lcmd5JTIwQmFsbHN8ZW58MHx8fHwxNzYxNjIzMDYxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+    crop: null,
   },
 ];
 
