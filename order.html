@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="response.css" />
+</head>
+<body>
+    <header class="header">
+      <div class="container">
+        <div class="header-content">
+          <div class="logo">
+            <h1>☀️ Sunny Bites Café</h1>
+          </div>
+          <nav class="nav">
+            <ul class="nav-list">
+              <li><a href="index.html" class="nav-link">Home</a></li>
+              <li><a href="menu.html" class="nav-link">Menu</a></li>
+              <li>
+                <a href="order.html" class="nav-link active">Order Online</a>
+              </li>
+            </ul>
+          </nav>
+          <button
+            class="menu-toggle"
+            id="menuToggle"
+            aria-label="Toggle navigation menu"
+            aria-expanded="false"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main>
+       <section class="order-section" id="orderSection">
+        <div class="container">
+          <h2>Place Your Order</h2>
+
+          <!-- Order Container with 2 Columns -->
+          <div class="order-container">
+            <!-- LEFT COLUMN: Order Items and Customer Info -->
+            <div class="order-left-column">
+              <!-- Current Order Items -->
+              <div class="order-items-section">
+                <h3>Your Order</h3>
+                <div class="order-items-list" id="orderList">
+                  <!-- Order items will be displayed here -->
+                </div>
+              </div>
+
+              <div class="customer-info-section">
+                <h3>Customer Information</h3>
+                <form id="orderForm" novalidate>
+                  <!-- Personal Information -->
+                  <fieldset>
+                    <legend>Your Information</legend>
+
+                    <div class="form-group">
+                      <label for="fullName">Full Name</label>
+                      <input
+                        type="text"
+                        id="fullName"
+                        name="fullName"
+                        required
+                      />
+                      <span class="error-message" id="fullNameError"></span>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="email">Email</label>
+                      <input type="email" id="email" name="email" required />
+                      <span class="error-message" id="emailError"></span>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="phone">Phone Number</label>
+                      <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        placeholder="123-123-1234"
+                        required
+                      />
+                      <span class="error-message" id="phoneError"></span>
+                    </div>
+                  </fieldset>
+
+                  <fieldset>
+                    <legend>Delivery Address</legend>
+
+                    <div class="form-group">
+                      <label for="street">Street Address</label>
+                      <input type="text" id="street" name="street" required />
+                      <span class="error-message" id="streetError"></span>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="city">City</label>
+                      <input type="text" id="city" name="city" required />
+                      <span class="error-message" id="cityError"></span>
+                    </div>
+
+                    <div class="form-row">
+                      <div class="form-group">
+                        <label for="province">Province</label>
+                        <select id="province" name="province" required>
+                          <option value="">Select a province</option>
+                          <option value="AB">Alberta</option>
+                          <option value="BC">British Columbia</option>
+                          <option value="MB">Manitoba</option>
+                          <option value="NB">New Brunswick</option>
+                          <option value="NL">Newfoundland and Labrador</option>
+                          <option value="NS">Nova Scotia</option>
+                          <option value="ON">Ontario</option>
+                          <option value="PE">Prince Edward Island</option>
+                          <option value="QC">Quebec</option>
+                          <option value="SK">Saskatchewan</option>
+                          <option value="NT">Northwest Territories</option>
+                          <option value="NU">Nunavut</option>
+                          <option value="YT">Yukon</option>
+                        </select>
+                        <span class="error-message" id="provinceError"></span>
+                      </div>
+                      <div class="form-group">
+                        <label for="postalCode">Postal Code</label>
+                        <input
+                          type="text"
+                          id="postalCode"
+                          name="postalCode"
+                          placeholder="A1A 1A1"
+                          maxlength="7"
+                          required
+                        />
+                        <span class="error-message" id="postalCodeError"></span>
+                      </div>
+                    </div>
+                  </fieldset>
+                  <button type="submit" class="btn btn-primary btn-large">
+                    Place Order
+                  </button>
+                </form>
+              </div>
+            </div>
+
+            <!-- RIGHT COLUMN: Order Summary -->
+             <div class="order-right-column">
+              <!-- Order Summary -->
+              <div class="cart-summary-section">
+                <h3>Order Summary</h3>
+                <div class="order-summary">
+                  <div class="summary-row">
+                    <span>Subtotal:</span>
+                    <span id="subtotal">$0.00</span>
+                  </div>
+                  <div class="summary-row">
+                    <span id="taxLabel">Tax:</span>
+                    <span id="tax">$0.00</span>
+                  </div>
+                  <div class="summary-row">
+                    <span>Delivery Fee:</span>
+                    <span id="deliveryFee">$5.00</span>
+                  </div>
+                  <div class="summary-row total">
+                    <span>Total:</span>
+                    <span id="total">$0.00</span>
+                  </div>
+                </div>
+
+                <div class="cart-actions">
+                  <button id="calculateBtn" class="btn btn-primary btn-block">
+                    Calculate Total
+                  </button>
+                  <button id="clearBtn" class="btn btn-secondary btn-block">
+                    Clear Order
+                  </button>
+                </div>
+              </div>
+                  
+                    
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>Sunny Bites Café</h3>
+            <p>Healthy, organic meals for the whole family.</p>
+          </div>
+          <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="menu.html">Menu</a></li>
+              <li><a href="order.html">Order</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Follow Us</h3>
+            <div class="social-links">
+              <a href="#" aria-label="Facebook">f</a>
+              <a href="#" aria-label="Instagram">📷</a>
+              <a href="#" aria-label="Twitter">𝕏</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 Sunny Bites Café. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Notification Alert -->
+    <div id="alertBox" class="alert-box"></div>
+
+    <script src="js/library.js"></script>
+    <script src="js/menu-data.js"></script>
+    <script src="js/order.js"></script>
+  </body>
+</html>
+</body>
+</html>
