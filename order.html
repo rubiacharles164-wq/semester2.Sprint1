@@ -6,6 +6,23 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="response.css" />
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "name": "Sunny Bites Café",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "123 Green Street",
+        "addressLocality": "Toronto",
+        "addressRegion": "ON",
+        "postalCode": "M5H 2N2",
+        "addressCountry": "CA"
+      },
+      "telephone": "+1-416-555-1234",
+      "url": "https://sunnybites.ca"
+    }
+    </script>
 </head>
 <body>
     <header class="header">
@@ -140,9 +157,6 @@
                       </div>
                     </div>
                   </fieldset>
-                  <button type="submit" class="btn btn-primary btn-large">
-                    Place Order
-                  </button>
                 </form>
               </div>
             </div>
@@ -161,10 +175,6 @@
                     <span id="taxLabel">Tax:</span>
                     <span id="tax">$0.00</span>
                   </div>
-                  <div class="summary-row">
-                    <span>Delivery Fee:</span>
-                    <span id="deliveryFee">$5.00</span>
-                  </div>
                   <div class="summary-row total">
                     <span>Total:</span>
                     <span id="total">$0.00</span>
@@ -172,9 +182,9 @@
                 </div>
 
                 <div class="cart-actions">
-                  <button id="calculateBtn" class="btn btn-primary btn-block">
-                    Calculate Total
-                  </button>
+                    <button id="calculateBtn" class="btn btn-primary btn-block" type="submit" form="orderForm">
+                      Place Order
+                    </button>
                   <button id="clearBtn" class="btn btn-secondary btn-block">
                     Clear Order
                   </button>
@@ -208,7 +218,7 @@
           </div>
         </div>
         <div class="footer-bottom">
-          <p>&copy; 2024 Sunny Bites Café. All rights reserved.</p>
+          <p>&copy; 2025 Keyin College SD25 - Semester 2 - Midterm Sprint Project. All rights reserved.</p>
         </div>
       </div>
     </footer>

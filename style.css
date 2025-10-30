@@ -238,6 +238,11 @@ a:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  .about-wide {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 .hero-content h2 {
@@ -273,52 +278,250 @@ a:hover {
    ABOUT SECTION
    ========================================== */
 
+/* Collapsible paragraphs and modal overlay */
+.collapsible-summary {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 6; /* Number of lines to be shown before the "Read more" */
+  line-clamp: 3;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.collapsible-toggle {
+  margin-top: 0.5rem;
+  padding: 6px 10px;
+  font-size: 0.9rem;
+}
+
+.collapsible-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 1200;
+}
+
+.collapsible-modal.open {
+  display: block;
+}
+
+.collapsible-modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+.collapsible-modal-content {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--background-white);
+  color: var(--text-dark);
+  padding: 1.25rem 1.5rem;
+  border-radius: 10px;
+  max-width: 700px;
+  width: calc(100% - 2rem);
+  box-shadow: var(--shadow-lg);
+}
+
+.collapsible-modal-close {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  background: none;
+  border: none;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.collapsible-modal-content > div {
+  max-height: calc(100vh - 160px);
+  overflow-y: auto;
+}
+
+@media (max-width: 900px) {
+  .collapsible-summary {
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+  }
+}
+
 .about {
   background-color: var(--background-white);
-  padding: 4rem 0;
+  padding: 4rem 5rem;
   border-radius: 12px;
   margin: 3rem 0;
   box-shadow: var(--shadow-sm);
+  width: 100%;
 }
 
 .about-content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: column;
   gap: 3rem;
 }
 
 .about-text p {
   margin-bottom: 1.5rem;
   line-height: 1.8;
+  padding-right: 2rem;
 }
 
 .about-info {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  justify-content: space-between;
+}
+.about-bottom {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 2rem;
+  align-items: stretch;
+}
+.about {
+  padding: 3rem 4rem;
+}
+
+@media (max-width: 900px) {
+  .about-bottom {
+    grid-template-columns: 1fr;
+  }
+  .about {
+    padding: 2rem 1.5rem;
+  }
+  .specials-horizontal-card {
+    max-width: 100%;
+  }
+  .specials-image-wrapper img.menu-card-image {
+    width: 120px;
+    height: 120px;
+  }
 }
 
 .info-card {
   background-color: var(--background-light);
-  padding: 1.5rem;
-  border-left: 4px solid var(--primary-color);
-  border-radius: 6px;
+  padding: 0.9rem 1rem;
+  border-left: 3px solid var(--primary-color);
+  border-radius: 8px;
   transition: all var(--transition-speed) ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .info-card:hover {
   box-shadow: var(--shadow-md);
-  transform: translateX(5px);
+  transform: translateX(4px);
 }
 
 .info-card h3 {
   color: var(--secondary-color);
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.35rem;
+  font-size: 1.05rem;
 }
 
 .info-card p {
   margin-bottom: 0;
   color: var(--text-light);
+  font-size: 0.95rem;
+}
+
+/* ==========================================
+   SPECIALS CAROUSEL
+   ========================================== */
+
+.specials-carousel {
+  background: var(--background-white);
+  border-radius: 12px;
+  box-shadow: var(--shadow-md);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 350px;
+}
+.specials-carousel {
+  position: relative;
+}
+
+.specials-carousel .carousel-btn {
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 20;
+}
+
+.specials-carousel .prev {
+  left: -55px;
+}
+
+.specials-carousel .next {
+  right: -55px;
+}
+
+/* ==========================================
+     SPECIALS CAROUSEL HORIZONTAL CARD
+   ========================================== */
+
+.specials-horizontal-card {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  background: var(--background-white);
+  border-radius: 12px;
+  box-shadow: var(--shadow-md);
+  padding: 1.5rem;
+  gap: 2rem;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.specials-image-wrapper {
+  flex: 0 0 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.specials-image-wrapper img.menu-card-image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.specials-info-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.specials-info-wrapper h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.3rem;
+}
+
+.specials-info-wrapper p {
+  margin-bottom: 1rem;
+  color: var(--text-light);
+  font-size: small;
+}
+
+.specials-bottom-row {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.specials-order-btn {
+  padding: 8px 20px;
+  font-size: 1rem;
 }
 
 /* ==========================================
@@ -566,6 +769,26 @@ a:hover {
   padding: 1.5rem;
 }
 
+.menu-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.menu-card-image {
+  flex: 0 0 200px; /* preserve image height and prevent shrinking */
+}
+
+.menu-card-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto; /* allow content area to grow and push footer to bottom */
+}
+
+.menu-card-footer {
+  margin-top: auto; /* pushes footer to the bottom of the card */
+}
+
 .menu-card-category {
   display: inline-block;
   background-color: var(--primary-color);
@@ -604,6 +827,24 @@ a:hover {
 .menu-card .btn {
   padding: 8px 16px;
   font-size: 0.9rem;
+}
+.menu-card-footer {
+  align-items: center;
+  gap: 1rem;
+}
+
+.menu-price {
+  display: inline-flex;
+  align-items: center;
+  line-height: 1;
+}
+
+.menu-card .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  min-height: 36px;
 }
 
 /* ==========================================
@@ -1023,9 +1264,9 @@ form legend {
 
 .social-links a {
   display: inline-block;
-  width: 40px;
-  height: 40px;
-  background-color: rgba(255, 255, 255, 0.2);
+  width: 45px;
+  height: 45px;
+  font-size: 1.5rem;
   border-radius: 50%;
   text-align: center;
   line-height: 40px;
