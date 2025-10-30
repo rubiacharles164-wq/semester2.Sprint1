@@ -189,6 +189,7 @@ function renderSpecialsCarousel() {
       </div>
     </div>
   `;
+
   // Render/update dots for specials carousel (similar to reviews)
   const dotsContainer = document.getElementById("specialsCarouselDots");
   if (dotsContainer) {

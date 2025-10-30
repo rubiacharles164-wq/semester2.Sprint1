@@ -279,6 +279,7 @@ a:hover {
    ========================================== */
 
 /* Collapsible paragraphs and modal overlay */
+
 .collapsible-summary {
   display: -webkit-box;
   -webkit-box-orient: vertical;
@@ -444,6 +445,7 @@ a:hover {
   align-items: center;
   min-height: 350px;
 }
+
 .specials-carousel {
   position: relative;
 }
@@ -1052,31 +1054,6 @@ form legend {
   margin-bottom: 0;
 }
 
-.radio-group {
-  display: flex;
-  gap: 1.5rem;
-  margin-top: 0.5rem;
-}
-
-.radio-label {
-  display: flex;
-  align-items: center;
-  font-weight: 500;
-  cursor: pointer;
-  margin-bottom: 0.75rem;
-}
-
-.radio-label input[type="radio"] {
-  width: auto;
-  margin-right: 0.5rem;
-  cursor: pointer;
-  accent-color: var(--primary-color);
-}
-
-.radio-label span {
-  cursor: pointer;
-}
-
 .form-buttons {
   display: flex;
   gap: 1rem;
@@ -1119,8 +1096,7 @@ form legend {
 
 .order-items-section,
 .customer-info-section,
-.cart-summary-section,
-.delivery-options-section {
+.cart-summary-section {
   background-color: var(--background-white);
   padding: 2rem;
   border-radius: 12px;
@@ -1129,8 +1105,7 @@ form legend {
 
 .order-items-section h3,
 .customer-info-section h3,
-.cart-summary-section h3,
-.delivery-options-section h3 {
+.cart-summary-section h3 {
   margin-bottom: 1.5rem;
   color: var(--secondary-color);
   border-bottom: 2px solid var(--primary-color);
@@ -1153,13 +1128,6 @@ form legend {
 .btn-block {
   width: 100%;
   display: block;
-}
-
-.radio-group-vertical {
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
-  margin-top: 0.5rem;
 }
 
 /* ==========================================
