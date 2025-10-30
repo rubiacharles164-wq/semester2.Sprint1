@@ -10,6 +10,18 @@ The application showcases the café's menu, allows customers to browse items, re
 
 ## 📂 Project Structure
 
+# Sunny Bites Café — Project Overview
+
+## 🌞 About the Project
+
+**Sunny Bites Café** is a responsive web application for a seasonal organic café in Toronto. The project is built with vanilla HTML5, CSS3, and JavaScript—no frameworks or build tools—making it lightweight and easy to maintain.
+
+The application showcases the café's menu, allows customers to browse items, read reviews, and place orders online.
+
+---
+
+## 📂 Project Structure
+
 ```
 semester2.Sprint1/
 ├── index.html              # Home page (hero, specials carousel, reviews, about)
@@ -17,17 +29,14 @@ semester2.Sprint1/
 ├── order.html              # Order form with cart summary
 ├── style.css               # Main stylesheet (layout, components, responsive base)
 ├── response.css            # Responsive CSS (mobile & tablet breakpoints)
-├── js/
-│   ├── library.js          # Shared utilities (validation, storage, alerts, formatters)
-│   ├── menu-data.js        # Menu items dataset (breakfast, lunch, beverages, desserts)
-│   ├── menu.js             # Menu page logic & addToOrder() function
-│   ├── app.js              # Homepage logic (carousels, collapsible about, initialization)
-│   ├── reviews.js          # Reviews data
-│   └── order.js            # Order page form validation & processing
-├── assets/
-│   └── images/             # Product and promotional images
-├── w3.css                  # W3.CSS framework (optional utility styles)
-└── Framework/              # Documentation & reference files (notes, guidelines, summaries)
+├── README.md               # Project overview (this file)
+└── js/
+    ├── library.js          # Shared utilities (validation, storage, alerts, formatters)
+    ├── menu-data.js        # Menu items dataset (breakfast, lunch, beverages, desserts)
+    ├── menu.js             # Menu page logic & addToOrder() function
+    ├── app.js              # Homepage logic (carousels, collapsible about, initialization)
+    ├── reviews.js          # Reviews data
+    └── order.js            # Order page form validation & processing
 ```
 
 ---
@@ -204,6 +213,12 @@ semester2.Sprint1/
 
 ---
 
+## ℹ️ Structured Data
+
+This project uses [JSON-LD](https://json-ld.org/) embedded in the HTML `<head>` to provide structured data about Sunny Bites Café (address, phone, website, etc.) for search engines and rich results. The format follows [schema.org Restaurant](https://schema.org/Restaurant) standards for better SEO and discoverability.
+
+---
+
 ## 📝 Code Quality & Standards
 
 - **Semantic HTML**: Proper use of `<header>`, `<main>`, `<section>`, `<footer>`, `<form>`, etc.
@@ -224,18 +239,7 @@ semester2.Sprint1/
 
 ---
 
-## 📖 For More Details
-
-See the documentation folder (`Framework/`) for:
-
-- `QUICK_START.md` — Quick setup guide
-- `PROJECT_GUIDELINES.md` — Development standards
-- `TESTING_CHECKLIST.md` — QA checklist
-- Other reference files for detailed specifications
-
----
-
-## 📌 Summary
+## Summary
 
 **Sunny Bites Café** is a complete, functional web app for an organic seasonal café. It demonstrates responsive design, vanilla JavaScript interactivity, form handling, DOM manipulation, and localStorage integration—all without frameworks or build tools. The codebase is well-organized, accessible, and ready for educational use or as a foundation for a real café website.
 
