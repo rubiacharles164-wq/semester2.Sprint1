@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="response.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order - Sunny Bites Café</title>
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/response.css">
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -83,14 +83,13 @@
                         type="text"
                         id="fullName"
                         name="fullName"
-                        required
-                      />
+                        required>
                       <span class="error-message" id="fullNameError"></span>
                     </div>
 
                     <div class="form-group">
                       <label for="email">Email</label>
-                      <input type="email" id="email" name="email" required />
+                      <input type="email" id="email" name="email" required>
                       <span class="error-message" id="emailError"></span>
                     </div>
 
@@ -101,8 +100,7 @@
                         id="phone"
                         name="phone"
                         placeholder="123-123-1234"
-                        required
-                      />
+                        required>
                       <span class="error-message" id="phoneError"></span>
                     </div>
                   </fieldset>
@@ -112,13 +110,13 @@
 
                     <div class="form-group">
                       <label for="street">Street Address</label>
-                      <input type="text" id="street" name="street" required />
+                      <input type="text" id="street" name="street" required>
                       <span class="error-message" id="streetError"></span>
                     </div>
 
                     <div class="form-group">
                       <label for="city">City</label>
-                      <input type="text" id="city" name="city" required />
+                      <input type="text" id="city" name="city" required>
                       <span class="error-message" id="cityError"></span>
                     </div>
 
@@ -151,8 +149,7 @@
                           name="postalCode"
                           placeholder="A1A 1A1"
                           maxlength="7"
-                          required
-                        />
+                          required>
                         <span class="error-message" id="postalCodeError"></span>
                       </div>
                     </div>
@@ -190,8 +187,10 @@
                   </button>
                 </div>
               </div>
-                  
-                    
+            </div> <!-- close .order-right-column -->
+          </div> <!-- close .order-container -->
+        </div> <!-- close .container -->
+      </section> <!-- close .order-section -->
     </main>
     <footer class="footer">
       <div class="container">
@@ -230,6 +229,4 @@
     <script src="js/menu-data.js"></script>
     <script src="js/order.js"></script>
   </body>
-</html>
-</body>
 </html>

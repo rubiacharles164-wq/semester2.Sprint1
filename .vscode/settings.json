@@ -1,0 +1,11 @@
+{
+  // Use VS Code built-in editor for HTML files
+  "workbench.editorAssociations": [
+    { "viewType": "default", "filenamePattern": "*.html" }
+  ],
+  // Use Prettier for all other files if installed, otherwise fallback to VS Code default
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[html]": {
+    "editor.defaultFormatter": null
+  }
+}
