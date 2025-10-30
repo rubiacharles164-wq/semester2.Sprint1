@@ -1,0 +1,114 @@
+<!--
+Name: Group 3
+Desc: Midtrem Sprint
+Date: 2025-10-21
+-->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sunny Bites Cafe — Home</title>
+  <link rel="stylesheet" href="doris.css" />
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="wrap">
+      <a class="logo" href="/" aria-label="Sunny Bites Cafe home">Bakery & Cafe</a>
+      <nav aria-label="Main navigation">
+        <ul class="nav">
+          <li><a href="#" aria-current="page">Home</a></li>
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="site-main" role="main">
+    <!-- Hero -->
+    <section class="hero" aria-labelledby="hero-heading">
+      <img src="images/hero.jpg" alt="Interior view of Bakery & Cafe with pastries and warm lighting" class="hero-image" />
+      <div class="hero-content wrap">
+        <h1 id="hero-heading">Welcome to Bakery & Cafe</h1>
+        <p class="lede">Fresh pastries, great coffee, and a cozy place to gather. Open every week for breakfast and lunch.</p>
+        <a class="btn" href="#contact">Visit Us</a>
+      </div>
+    </section>
+
+    <!-- Info: Location, Hours, Contact -->
+    <section class="info wrap" aria-labelledby="info-heading">
+      <h2 id="info-heading">Location & Contact</h2>
+      <div class="info-grid">
+        <div class="info-card" id="location">
+          <h3>Location</h3>
+          <address>
+            Bakery & Cafe<br />
+            123 Main St.<br />
+            Springfield, XY 12345<br />
+            <a href="https://maps.google.com/?q=123+Main+St+Springfield" rel="noopener" target="_blank">Get directions</a>
+          </address>
+        </div>
+
+        <div class="info-card" id="hours">
+          <h3>Hours</h3>
+          <ul class="hours">
+            <li>Mon–Fri: <time datetime="07:00">7:00 AM</time> — <time datetime="15:00">3:00 PM</time></li>
+            <li>Sat–Sun: <time datetime="08:00">8:00 AM</time> — <time datetime="14:00">2:00 PM</time></li>
+          </ul>
+        </div>
+
+        <div class="info-card" id="contact">
+          <h3>Contact</h3>
+          <p>Phone: <a href="tel:+15551234567">+1 (555) 123-4567</a></p>
+          <p>Email: <a href="mailto:hello@bakery.example">hello@bakery.example</a></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Carousel -->
+    <section class="testimonials wrap" aria-labelledby="testimonials-heading" role="region" aria-label="Customer testimonials">
+      <h2 id="testimonials-heading">What customers are saying</h2>
+
+      <div id="testimonial-carousel" class="carousel" tabindex="0" aria-roledescription="carousel">
+        <button class="carousel-btn prev" aria-label="Previous review" id="carousel-prev">&larr;</button>
+
+        <div class="carousel-window">
+          <!-- JS will populate reviews here -->
+          <article class="testimonial" aria-live="polite">
+            <img src="images/home-1.jpg" alt="Customer portrait" class="testimonial-avatar" />
+            <blockquote class="testimonial-text">Loading reviews…</blockquote>
+            <p class="testimonial-meta"><span class="testimonial-author"></span> — <span class="testimonial-location"></span></p>
+          </article>
+        </div>
+
+        <button class="carousel-btn next" aria-label="Next review" id="carousel-next">&rarr;</button>
+
+        <div class="carousel-indicators" role="tablist" aria-label="Review indicators" id="carousel-indicators" ></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="wrap">
+      <p>&copy; <span id="year"></span> Bakery & Cafe</p>
+    </div>
+  </footer>
+
+  <script src="review script.js"></script>
+  <script>
+    // Initialize year and carousel after reviews.js has defined initCarousel
+    document.getElementById('year').textContent = new Date().getFullYear();
+    if (window.initCarousel) {
+      window.initCarousel({
+        carouselSelector: '#testimonial-carousel',
+        prevSelector: '#carousel-prev',
+        nextSelector: '#carousel-next',
+        indicatorsSelector: '#carousel-indicators',
+        interval: 3000 // 3 seconds rotation
+      });
+    }
+  </script>
+</body>
+</html>
